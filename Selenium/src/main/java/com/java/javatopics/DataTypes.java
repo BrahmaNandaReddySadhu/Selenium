@@ -1,4 +1,4 @@
-package com.java.datatypes;
+package com.java.javatopics;
 
 public class DataTypes {
 
