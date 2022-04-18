@@ -5,6 +5,9 @@ public class Variables {
 	/*
 	 *  variables is container which can used to store some values 
 	 * 
+	 *  1) Instance variable
+	 *  2) Static variable
+	 *  3) Local variable  
 	 *   
 	 */
 	
