@@ -138,7 +138,9 @@ public class Operators {
 		 */
 		System.out.println(ad<<2);  // 8
 		System.out.println(ad>>2);  // 0 
-
+       
+		int ar=5;
+		System.out.println(ar++ + ++ar);
 
 
 	}
