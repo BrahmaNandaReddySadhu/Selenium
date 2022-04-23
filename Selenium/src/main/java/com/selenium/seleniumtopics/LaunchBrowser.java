@@ -1,4 +1,4 @@
-package com.selenium;
+package com.selenium.seleniumtopics;
 
 import javax.annotation.concurrent.ThreadSafe;
 
@@ -81,7 +81,7 @@ public class LaunchBrowser {
 		
 		driver.findElement(By.xpath("//*[@class='lightbluecolor']//a")).click();
 		Thread.sleep(3000);
-		driver.close();
+		driver.quit();
 		
 
 
