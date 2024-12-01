@@ -1,7 +1,5 @@
 package com.java.javatopics;
 
-import io.opentelemetry.semconv.trace.attributes.SemanticAttributes.FaasTriggerValues;
-
 public class StringBasicMethods {
 
 	public static void main(String[] args) {

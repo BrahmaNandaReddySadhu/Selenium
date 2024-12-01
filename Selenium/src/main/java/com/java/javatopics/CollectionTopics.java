@@ -1,20 +1,13 @@
 package com.java.javatopics;
 
-import java.security.PublicKey;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
-import java.util.List;
 import java.util.PriorityQueue;
 import java.util.Set;
-import java.util.TreeMap;
 import java.util.TreeSet;
-
-import com.github.dockerjava.core.dockerfile.DockerfileStatement.Add;
-
-import io.opentelemetry.exporter.logging.SystemOutLogExporter;
 
 public class CollectionTopics {
 

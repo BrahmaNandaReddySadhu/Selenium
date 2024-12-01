@@ -30,6 +30,8 @@ public class CustomCDPMethodExceution {
 		driver.executeCdpCommand("Emulation.setDeviceMetricsOverride", setDeviceMetricsOverride);
 		
 		driver.get("https://rahulshettyacademy.com/angularAppdemo/");
+		
+		
 			
 		
 

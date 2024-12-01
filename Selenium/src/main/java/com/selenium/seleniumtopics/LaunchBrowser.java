@@ -1,17 +1,9 @@
 package com.selenium.seleniumtopics;
 
-import javax.annotation.concurrent.ThreadSafe;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.safari.SafariDriver;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
-import io.netty.handler.ssl.JdkApplicationProtocolNegotiator.AllocatorAwareSslEngineWrapperFactory;
 
 public class LaunchBrowser {
 
