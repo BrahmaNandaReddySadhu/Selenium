@@ -1,6 +1,7 @@
 package com.java.javatopics.FileHandling;
 
-import java.io.File;
+import java.io.*;
+import java.util.Scanner;
 
 public class HandlingTextFile {
 
@@ -52,13 +53,71 @@ public class HandlingTextFile {
         }
     }
 
+   /* handling the file operation
+
+   create , writing , reading , renaming , deleting files
+
+    */
+
+    // creating the file
+    public static  void createFile(String filePath){
+        File object = new File(filePath);
+        try {
+            if(object.createNewFile()){
+                System.out.print("File created "+ object.getName());
+            }else{
+                System.out.print("File is already exsits");
+            }
+        } catch (IOException e) {
+           e.printStackTrace();
+        }
+
+    }
+
+    // writing data into into file
+    public static void writeFile(String filePath, String content) {
+        FileWriter fileWriter = null;
+        try {
+            fileWriter = new FileWriter(filePath);
+            fileWriter.write(content);
+            fileWriter.close();
+            System.out.println("Successfully wrote to file");
+        } catch (IOException e) {
+            System.out.println("Error occured  while writing the content to the file");
+            e.printStackTrace();
+        }
+    }
+
+
+    public static void readFile(String filePath) {
+        File file = new File(filePath);
+        try {
+            Scanner scanner = new Scanner(file);
+            while (scanner.hasNextLine()) {
+                String data = scanner.nextLine();
+                System.out.print(data);
+            }
+            scanner.close();
+        } catch (FileNotFoundException e) {
+            System.out.print("Error occured while reading data ");
+            e.printStackTrace();
+        }
+    }
+
+
+
+
     public static void main(String[] args) {
         String folderPath = "D:\\BrahmanandaReddySadhu\\projects\\IntellijIdea\\HandlingFiles";
         createFolder(folderPath);
         System.out.println("Mentioned Folder is available at the location " + folderPath + "is " + checkFolderExist(folderPath));
         String newFolderPath = "D:\\BrahmanandaReddySadhu\\projects\\IntellijIdea\\HandlingFilesInJava";
         renameFolder(folderPath, newFolderPath);
-        deleteFolder(folderPath);
         deleteFolder(newFolderPath);
+        String fileName =newFolderPath+"\\test.text";
+        createFile(fileName);
+        writeFile(fileName,"this is content of the file");
+        readFile(fileName);
+
     }
 }
