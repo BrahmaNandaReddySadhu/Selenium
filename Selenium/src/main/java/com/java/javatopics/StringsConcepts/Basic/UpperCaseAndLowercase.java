@@ -12,7 +12,7 @@ public class UpperCaseAndLowercase {
         System.out.println(lowerCaseString);
 
 
-        // characeters converting to upper and lower cases
+        // characters  converting to upper and lower cases
         String string1= "Sadhu Brahma Nanda Reddy";
 
         StringBuffer stringBuffer = new StringBuffer(string1);
