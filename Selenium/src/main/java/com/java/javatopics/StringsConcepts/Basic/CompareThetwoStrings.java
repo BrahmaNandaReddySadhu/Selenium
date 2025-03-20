@@ -1,7 +1,5 @@
 package com.java.javatopics.StringsConcepts.Basic;
 
-import java.sql.SQLOutput;
-
 public class CompareThetwoStrings {
     public static void main(String[] args) {
 
