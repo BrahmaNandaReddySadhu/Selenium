@@ -108,11 +108,8 @@ public class FrquencyOfEcahCaharceterInString {
 
         System.out.println(list);
 
-
         HashMap<String, Integer> hashMapstring = new HashMap<>();
-
         String string1 = "this is java java is most important java";
-
         String[] stringArray = string1.split(" ");
 
         int countValueForString;
@@ -124,7 +121,6 @@ public class FrquencyOfEcahCaharceterInString {
                     stringArray[j] = "-1";
                 }
             }
-
             if (!stringArray[i].equals("-1")) {
                 System.out.println(stringArray[i] + "<-->" + countValueForString);
                 hashMapstring.put(stringArray[i], countValueForString);
