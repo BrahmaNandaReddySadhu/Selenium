@@ -42,7 +42,8 @@ public class ExtractAllIntegerfromString {
 
         // 2.regular expressions
 
-        String string3 ="orderId is : 123423 is test 1662";
+        String string3 ="orderId " +
+                " : 123423 is test 1662";
 
         Pattern pattern = Pattern.compile("\\d+");
         Matcher matcher  =pattern.matcher(string3);
