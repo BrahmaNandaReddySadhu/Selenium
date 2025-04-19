@@ -11,4 +11,5 @@ public class AverageOfArray {
         double avarage = sum/array.length;
         System.out.println("Average => "+ avarage);
     }
+
 }

@@ -78,6 +78,22 @@ public class SortCharactersOfString {
         string2.chars().map(value-> (char)value).sorted().forEach(value -> System.out.print((char)value));
 
 
+        int data[]= {10,203,30,50,60,10};
+
+        for(int i=0; i< data.length-1;i++){
+            for(int j=0; j<data.length-i-1;j++){
+                if(data[j]>data[j+1]){
+                int temp = data[j];
+                data[j]=data[j+1];
+                data[j+1]=temp;
+            }}
+        }
+
+        for( int v:data)
+        {
+            System.out.println(v);
+        }
+
     }
 
 
